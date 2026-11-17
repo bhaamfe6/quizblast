@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>QuizBlast Party Trivia</title>
+  <meta name="description" content="Real-time multiplayer trivia for team meetings, family parties and game nights." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bg-shapes"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span><span class="s5"></span></div>
+  <div id="app">
+    <div class="topbar">
+      <div class="logo" data-action="home"><span class="bolt">⚡</span><span>Quiz<b>Blast</b></span></div>
+      <div class="top-actions" id="top-actions"></div>
+    </div>
+    <main id="main"></main>
+  </div>
+  <canvas class="confetti" id="confetti"></canvas>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/avatars.js"></script>
+  <script src="/audio.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
